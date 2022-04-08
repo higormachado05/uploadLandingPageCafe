@@ -1,0 +1,23 @@
+@media  screen and (max-width: 1300px) {
+   #title{
+       align-self: center;
+   }
+    h2{
+        font-size: 30px;
+    }
+    main{
+        flex-direction: column;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+    
+    input{
+        align-self: center;
+    }
+
+    #mulher{
+        display: none;
+    }
+}

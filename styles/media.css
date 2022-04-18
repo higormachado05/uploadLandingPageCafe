@@ -1,12 +1,24 @@
-@media  screen and (max-width: 1300px) {
+@media  screen and (max-width: 980px) {
    #title{
        align-self: center;
+       align-items: center;
    }
+
+   header{
+       flex-direction: column;
+   }
+  
+   .barra{
+       width: 100px;
+       margin-top: 40px;
+   }
+
     h2{
         font-size: 30px;
     }
     main{
         flex-direction: column;
+        
     }
 
     form{

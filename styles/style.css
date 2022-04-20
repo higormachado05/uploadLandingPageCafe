@@ -112,12 +112,24 @@ header{
 .barra{
     background-color:rgb(92, 94, 95);
     height: 14%;
-    width: 200px;
+    width: 10px;
     position: absolute;
     transition: all .2s linear;
     opacity: 0;
-    margin-left:1560px;
+    margin-left:1500px;
     margin-top: 120px;
+    border-radius: 3px;
+}
+
+.barra-sobre{
+    background-color:rgb(92, 94, 95);
+    height: 14%;
+    width: 10px;
+    position: absolute;
+    transition: all .2s linear;
+    opacity: 0;
+    margin-left:1500px;
+    margin-top: 200px;
     border-radius: 3px;
 }
 
@@ -125,6 +137,11 @@ header{
     flex-direction: column;
     line-height: 10px;
     
+}
+
+#title-sobre{
+    flex-direction: column;
+    line-height: 10px;
 }
 
 h1{
@@ -136,11 +153,23 @@ h1{
 }
 
 #check:checked ~ .barra {
-    transform: translateX(-220px);
+    transform: translateX(-150px);
     opacity: 1;
+    width: 200px;
 
 }
 #check:checked ~ .barra  nav a .link{
+    opacity: 1;
+    
+}
+
+#check:checked ~ .barra-sobre {
+    transform: translateX(-150px);
+    opacity: 1;
+    width: 200px;
+
+}
+#check:checked ~ .barra-sobre  nav a .link{
     opacity: 1;
     
 }

@@ -3,8 +3,7 @@
 body{
     background-color: rgb(214, 214, 214);
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px;
+    margin: 0;
 }
 
 main{
@@ -94,7 +93,7 @@ nav a{
     color: white;
     border-bottom: 3px solid #222;
     opacity: 0;
-    
+
 }
 
 .link:hover{
@@ -106,7 +105,8 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    border-bottom: 2px solid #777;
+    width: 100vw;
 }
 
 .barra{
@@ -136,12 +136,14 @@ header{
 #title{
     flex-direction: column;
     line-height: 10px;
-    
+
 }
 
 #title-sobre{
     flex-direction: column;
     line-height: 10px;
+    padding: .75rem;
+    padding-left: 2rem;
 }
 
 h1{
@@ -160,7 +162,7 @@ h1{
 }
 #check:checked ~ .barra  nav a .link{
     opacity: 1;
-    
+
 }
 
 #check:checked ~ .barra-sobre {
@@ -171,11 +173,46 @@ h1{
 }
 #check:checked ~ .barra-sobre  nav a .link{
     opacity: 1;
-    
+
 }
 
 header{
    display: flex;
    flex-direction:row;
    align-items: center;
+   justify-content: space-between;
+}
+
+.conteudo{
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 110.31px);
+}
+
+.img-fundo{
+  height: 100%;
+  width: 40%;
+  background: url('../components/simon-karemann-p85-MG66GRY-unsplash0.jpg');
+  background-size: cover;
+}
+
+.conteudo-texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3rem;
+  margin: 0;
+  width: 60%;
+}
+
+.conteudo-texto > h1{
+  margin-top: 0;
+  font-size: 40px;
+}
+
+.conteudo-texto > p{
+  margin-top: 0;
+  line-height: 2rem;
+  font-size: 20px;
+  text-align: justify;
 }
